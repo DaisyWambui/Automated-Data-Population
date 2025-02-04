@@ -1,0 +1,23 @@
+services:
+  database:
+    container_name: mysql_db
+    image: mysql:latest
+    restart: always
+    ports:
+      - "3310:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root@2024
+      MYSQL_DATABASE: project1_db
+      MYSQL_USER: dwambui
+      MYSQL_PASSWORD: dwambui@2024
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - network1
+
+volumes:
+  mysql_data:
+
+networks:
+  network1:
+
