@@ -5,10 +5,10 @@ In this project, I automated the generation and insertion of synthetic user data
 This project automates the process of populating a MySQL database with randomly generated user data at regular intervals. It leverages Python, Docker, and Docker Compose for containerization and automation. A Python script generates fake user data using the Faker library and inserts it into a MySQL database. Docker ensures the environment is consistent across different setups, while Docker Compose simplifies container management.
 
 # Key Components
-# - Python Script: The main script generates fake user data and populates the MySQL database.
-# - Docker: Used to containerize the MySQL database and Python environment.
-# - Docker Compose: Manages the multi-container setup, ensuring the Python script can connect to the MySQL database.
-# - MySQL Database: Used as the storage for the generated data.
+- Python Script: The main script generates fake user data and populates the MySQL database.
+- Docker: Used to containerize the MySQL database and Python environment.
+- Docker Compose: Manages the multi-container setup, ensuring the Python script can connect to the MySQL database.
+- MySQL Database: Used as the storage for the generated data.
 # Steps Taken
 # 1. Docker Setup
 A Dockerfile was created to define the environment for running the Python script. 
