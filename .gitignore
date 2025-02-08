@@ -1,0 +1,17 @@
+# Ignore Python cache and virtual environments
+__pycache__/
+*.pyc
+venv/
+.env
+
+# Ignore Docker-related files (but not Dockerfile)
+.dockerignore
+*.pid
+*.log
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore VS Code settings
+.vscode/
